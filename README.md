@@ -1,4 +1,4 @@
-# Intro to React Sprint Challenge
+i# Intro to React Sprint Challenge
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
 
@@ -31,7 +31,7 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
-
+   React JS solves the sate
 1. Describe component state.
 
 1. Describe props.
