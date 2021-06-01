@@ -12,23 +12,23 @@ const App = () => {
   // sync up with, if any.
  const [data, setData] = useState([])
   
- useEffect((data) => {
+ useEffect(() => {
   Axios
-  .get("https://swapi.dev/api/people/")
+  .get("https://swapi.dev/api/people")
   .then(res => {
     setData(res.data)
-    console.log(res.data)
+    
   })
   .catch(error => {
     console.log(error)
   })
 }, [])
+
+
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
-      {data.map(data => {
-        return <Character data={data}/>
-      })}
+      <Character characterArray={data}/>
     </div>
   );
 }

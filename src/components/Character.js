@@ -1,12 +1,25 @@
 // Write your Character component here
 import React from 'react'
-import Axios from "axios"
+import { Card, CardTitle, Container, Row, Col } from 'reactstrap'
 
-export default function Character (props) {
-    const { data } = props
+
+function Character (props) {
+   console.log(props.characterArray, 'This is showing props')
     
-return (
-    <div className='Characters container'>
-        <p>{Character.name} </p>
-    </div>
-)}
+    return (
+        <div>  
+      {props.characterArray.map((character) => {
+          return(
+              <Card key={character.created}>
+                <CardTitle>{character.name}</CardTitle>
+              </Card>
+
+
+          )
+
+      })}
+        </div>
+    )
+}
+
+export default Character
